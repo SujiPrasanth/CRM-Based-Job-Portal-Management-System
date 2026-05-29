@@ -28,7 +28,7 @@ console.log("MONGO_URI:", process.env.MONGO_URI);
 
 app.use(cors(
     {
-        origin: "http://localhost:5173",
+        origin: "https://crm-based-job-portal-management-sys.vercel.app",
         credentials: true
     }
 
