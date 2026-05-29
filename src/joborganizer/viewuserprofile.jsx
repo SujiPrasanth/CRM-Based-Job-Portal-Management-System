@@ -68,8 +68,8 @@ function Viewuserprofile() {
                             <div>
                                 <span className="font-semibold">Skills:</span>
                                 <div className="mt-2 flex flex-wrap gap-2">
-                                    {data.skills[0]?.split(" ")?.map((s, i) => (
-                                        <span key={i}  className="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium">
+                                    {data.skills.length === 0 ? "loading" : data.skills[0]?.split(" ")?.map((s, i) => (
+                                        <span key={i} className="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium">
                                             {s}
                                         </span>
                                     ))}
