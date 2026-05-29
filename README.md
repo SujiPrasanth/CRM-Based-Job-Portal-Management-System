@@ -42,7 +42,7 @@ A full-stack Recruitment CRM and Job Portal Management System developed using th
 
 ### Demo Video
 
-https://github.com/user-attachments/assets/92d300c2-94a0-43dd-880e-447fb5e113e7
+https://github.com/user-attachments/assets/37d53d3f-15b3-4b6d-90b0-ea3339affb04
 
 ---
 
