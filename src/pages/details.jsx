@@ -6,7 +6,7 @@ function Details() {
     useEffect(() => {
         async function fetchdata() {
             try {
-                const res = await fetch(`http://localhost:3001/api/fetchcompanydata/${id}`, {
+                const res = await fetch(`https://crm-based-job-portal-management-system.onrender.com/api/fetchcompanydata/${id}`, {
                     credentials: "include"
                 })
                 const data = await res.json()
@@ -28,7 +28,7 @@ function Details() {
     const handleapply = async (jobid) => {
         try {
 
-            const res = await fetch(`http://localhost:3001/api/applyjob`, {
+            const res = await fetch(`https://crm-based-job-portal-management-system.onrender.com/api/applyjob`, {
                 method: "POST",
                 credentials: "include",
                 headers: { "Content-Type": "application/json" },
@@ -52,7 +52,7 @@ function Details() {
     const handlesave = async (jobid) => {
         try {
 
-            const res = await fetch(`http://localhost:3001/api/savejob`, {
+            const res = await fetch(`https://crm-based-job-portal-management-system.onrender.com/api/savejob`, {
                 method: "POST",
                 credentials: "include",
                 headers: { "Content-Type": "application/json" },
@@ -84,7 +84,7 @@ function Details() {
 
 
                         <div className="flex gap-6 items-center">
-                            <img src={`http://localhost:3001/uploads/${data.companylogo}`} alt="" className="h-32 w-32" />
+                            <img src={`https://crm-based-job-portal-management-system.onrender.com/uploads/${data.companylogo}`} alt="" className="h-32 w-32" />
                             <div>
                                 <p className="font-bold text-3xl">{data.companyname}</p>
                                 <p className="font-semibold text-gray-600 ">{data.location}</p>

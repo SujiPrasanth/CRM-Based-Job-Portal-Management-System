@@ -30,7 +30,7 @@ function Profileedit() {
         formdataobj.append('resume',resume)
 
         try{
-            const res = await fetch(`http://localhost:3001/api/profileupdate`,{
+            const res = await fetch(`https://crm-based-job-portal-management-system.onrender.com/api/profileupdate`,{
                 method:"PATCH",
                 credentials:"include",
                 body:formdataobj
@@ -52,7 +52,7 @@ function Profileedit() {
     useEffect(() => {
     async function fetchProfile() {
         try {
-            const res = await fetch("http://localhost:3001/api/profiledata", {
+            const res = await fetch("https://crm-based-job-portal-management-system.onrender.com/api/profiledata", {
                 credentials: "include"
             })
 

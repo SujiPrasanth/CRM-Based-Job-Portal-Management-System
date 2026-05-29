@@ -10,7 +10,7 @@ function Organizerjobs() {
     useEffect(() => {
 
         async function fetchdata() {
-            const res = await fetch('http://localhost:3001/api/jobdata', {
+            const res = await fetch('https://crm-based-job-portal-management-system.onrender.com/api/jobdata', {
                 credentials: 'include'
             })
 
@@ -39,7 +39,7 @@ function Organizerjobs() {
 
             if (!confirmdelete) return
 
-            const res = await fetch(`http://localhost:3001/api/deletejob/${id}`, {
+            const res = await fetch(`https://crm-based-job-portal-management-system.onrender.com/api/deletejob/${id}`, {
                 method: "DELETE",
                 credentials: "include"
             })

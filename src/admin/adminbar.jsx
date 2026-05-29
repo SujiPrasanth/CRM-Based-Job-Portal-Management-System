@@ -15,7 +15,7 @@ function Adminbar() {
         const confirmmsg = window.confirm("Are you Sure want to Signout?")
         if (!confirmmsg) return
         try {
-            const res = await fetch('http://localhost:3001/api/adminlogout', {
+            const res = await fetch('https://crm-based-job-portal-management-system.onrender.com/api/adminlogout', {
                 credentials: "include",
                 method: "POST"
             })

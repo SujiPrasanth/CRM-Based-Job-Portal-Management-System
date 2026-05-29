@@ -5,7 +5,7 @@ function Overview() {
     useEffect(() => {
         async function dashboarddata() {
             try {
-                const res = await fetch('http://localhost:3001/api/dashboardoverview', {
+                const res = await fetch('https://crm-based-job-portal-management-system.onrender.com/api/dashboardoverview', {
                     credentials: "include"
                 })
 

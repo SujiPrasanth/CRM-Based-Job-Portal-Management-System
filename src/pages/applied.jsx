@@ -8,7 +8,7 @@ function Applied() {
 
         async function fetchdata() {
             try {
-                const res = await fetch('http://localhost:3001/api/getappliedjob', {
+                const res = await fetch('https://crm-based-job-portal-management-system.onrender.com/api/getappliedjob', {
                     credentials: "include"
                 })
                 const data = await res.json()
@@ -38,7 +38,7 @@ function Applied() {
 
                             <div className="flex gap-3 items-center">
                                 <div>
-                                    <img src={`http://localhost:3001/uploads/${job.companylogo}`} alt="" className="h-7 w-7" />
+                                    <img src={`https://crm-based-job-portal-management-system.onrender.com/uploads/${job.companylogo}`} alt="" className="h-7 w-7" />
                                 </div>
                                 <div className="flex flex-col">
                                     <p className="text-xl font-bold">{job.companyname}</p>

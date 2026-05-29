@@ -16,7 +16,7 @@ function Sidebar() {
         const confirmmsg = window.confirm("Are you Sure want to Signout?")
         if (!confirmmsg) return
         try {
-            const res = await fetch('http://localhost:3001/api/logout', {
+            const res = await fetch('https://crm-based-job-portal-management-system.onrender.com/api/logout', {
                 credentials: "include",
                 method: "POST"
             })

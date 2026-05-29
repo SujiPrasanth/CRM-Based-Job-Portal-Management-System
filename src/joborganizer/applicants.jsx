@@ -7,7 +7,7 @@ function Applicants() {
 
         async function getdata() {
             try {
-                const res = await fetch('http://localhost:3001/api/applicants', {
+                const res = await fetch('https://crm-based-job-portal-management-system.onrender.com/api/applicants', {
                     credentials: "include"
                 })
 

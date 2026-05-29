@@ -28,7 +28,7 @@ function Navbar() {
         const confirmmsg = window.confirm("Are you sure want to Signout?")
         if (!confirmmsg) return
         try {
-            const res = await fetch('http://localhost:3001/api/userlogout', {
+            const res = await fetch('https://crm-based-job-portal-management-system.onrender.com/api/userlogout', {
                 method: "POST",
                 credentials: "include"
             })

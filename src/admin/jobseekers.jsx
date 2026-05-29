@@ -3,7 +3,7 @@ function Jobseekers() {
     const [data, setdata] = useState([])
     useEffect(() => {
         async function fethcdata() {
-            const res = await fetch('http://localhost:3001/api/jobseeker', {
+            const res = await fetch('https://crm-based-job-portal-management-system.onrender.com/api/jobseeker', {
                 credentials: "include"
             })
 

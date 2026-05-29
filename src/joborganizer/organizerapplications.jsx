@@ -9,7 +9,7 @@ function Applications() {
 
         try {
 
-            const res = await fetch('http://localhost:3001/api/applications', {
+            const res = await fetch('https://crm-based-job-portal-management-system.onrender.com/api/applications', {
                 credentials: "include"
             })
             const data = await res.json()
@@ -38,7 +38,7 @@ function Applications() {
             const confirmmessage = window.confirm(`Are You Sure want to Update Status to "${newstatus.toUpperCase()}"?`)
             if (!confirmmessage) return
 
-            const res = await fetch(`http://localhost:3001/api/updatestatus/${id}`, {
+            const res = await fetch(`https://crm-based-job-portal-management-system.onrender.com/api/updatestatus/${id}`, {
                 method: "PATCH",
                 credentials: "include",
                 headers: { "Content-Type": "application/json" },

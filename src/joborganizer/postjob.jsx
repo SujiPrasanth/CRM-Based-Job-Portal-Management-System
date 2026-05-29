@@ -26,7 +26,7 @@ function Postjob() {
         if (id) {
             const fetchjob = async () => {
                 try {
-                    const res = await fetch(`http://localhost:3001/api/jobdata/${id}`, {
+                    const res = await fetch(`https://crm-based-job-portal-management-system.onrender.com/api/jobdata/${id}`, {
                         credentials: "include"
                     })
 
@@ -80,7 +80,7 @@ function Postjob() {
         try {
             setloading(true)
 
-            const url = id ? `http://localhost:3001/api/jobpost/${id}` : 'http://localhost:3001/api/jobpost'
+            const url = id ? `https://crm-based-job-portal-management-system.onrender.com/api/jobpost/${id}` : 'https://crm-based-job-portal-management-system.onrender.com/api/jobpost'
             const method = id ? "PATCH" : "POST"
             const res = await fetch(url, {
                 method,

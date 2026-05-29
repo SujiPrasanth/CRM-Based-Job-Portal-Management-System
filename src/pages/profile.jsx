@@ -9,7 +9,7 @@ function Profile() {
     useEffect(() => {
         async function checklogin() {
             try {
-                const res = await fetch("http://localhost:3001/api/profile", {
+                const res = await fetch("https://crm-based-job-portal-management-system.onrender.com/api/profile", {
                     credentials: "include"
                 })
                 const data = await res.json()
@@ -99,11 +99,11 @@ function Profile() {
                             <p className="font-semibold text-xl mb-2">Resume</p>
                             {data.profile.resume ? (
                                 <div className="flex gap-4">
-                                    <a href={`http://localhost:3001/uploads/${data.profile?.resume}`} target="_blank"
+                                    <a href={`https://crm-based-job-portal-management-system.onrender.com/uploads/${data.profile?.resume}`} target="_blank"
                                         rel="noreferrer" className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition" >
                                         View
                                     </a>
-                                    <a href={`http://localhost:3001/uploads/${data.profile?.resume}`} download className="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition">
+                                    <a href={`https://crm-based-job-portal-management-system.onrender.com/uploads/${data.profile?.resume}`} download className="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition">
                                         Download
                                     </a>
                                 </div>

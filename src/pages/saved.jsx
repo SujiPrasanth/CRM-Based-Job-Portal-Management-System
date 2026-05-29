@@ -8,7 +8,7 @@ function Saved() {
 
         async function fetchdata() {
             try {
-                const res = await fetch('http://localhost:3001/api/getsavedjob', {
+                const res = await fetch('https://crm-based-job-portal-management-system.onrender.com/api/getsavedjob', {
                     credentials: "include"
                 })
                 const data = await res.json()
@@ -31,7 +31,7 @@ function Saved() {
 
     const handleapply = async (jobid, savedid) => {
         try {
-            const res = await fetch('http://localhost:3001/api/applyjob', {
+            const res = await fetch('https://crm-based-job-portal-management-system.onrender.com/api/applyjob', {
                 method: "POST",
                 credentials: "include",
                 headers: { "Content-Type": "application/json" },
@@ -44,7 +44,7 @@ function Saved() {
                 return
             }
 
-            await fetch('http://localhost:3001/api/removesavedjob', {
+            await fetch('https://crm-based-job-portal-management-system.onrender.com/api/removesavedjob', {
                 method: "DELETE",
                 credentials: "include",
                 headers: { "Content-Type": "application/json" },
@@ -59,7 +59,7 @@ function Saved() {
 
     const handleremove = async(savedid)=>{
         try{
-            const res = await fetch('http://localhost:3001/api/removesavedjob',{
+            const res = await fetch('https://crm-based-job-portal-management-system.onrender.com/api/removesavedjob',{
                 method:"DELETE",
                 credentials:"include",
                 headers:{"Content-Type":"application/json"},
@@ -86,7 +86,7 @@ function Saved() {
 
                             <div className="flex gap-3 items-center">
                                 <div>
-                                    <img src={`http://localhost:3001/uploads/${job.companylogo}`} alt="" className="h-7 w-7" />
+                                    <img src={`https://crm-based-job-portal-management-system.onrender.com/uploads/${job.companylogo}`} alt="" className="h-7 w-7" />
                                 </div>
                                 <div className="flex flex-col">
                                     <p className="text-xl font-bold">{job.companyname}</p>

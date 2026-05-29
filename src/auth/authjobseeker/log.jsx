@@ -11,7 +11,7 @@ function Log() {
     async function handlesignup() {
 
         try {
-            const res = await fetch('http://localhost:3001/api/signup', {
+            const res = await fetch('https://crm-based-job-portal-management-system.onrender.com/api/signup', {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({

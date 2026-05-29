@@ -8,7 +8,7 @@ function Jobdetails() {
     useEffect(() => {
         async function fetchdata() {
             try {
-                const res = await fetch(`http://localhost:3001/api/fetchcompanydata/${id}`, {
+                const res = await fetch(`https://crm-based-job-portal-management-system.onrender.com/api/fetchcompanydata/${id}`, {
                     credentials: "include"
                 })
                 const data = await res.json()
@@ -34,7 +34,7 @@ function Jobdetails() {
 
                     <div key={data._id} className="min-h-screen mt-12 md:mx-12 mx-6">
                         <div className="flex gap-6 items-center">
-                            <img src={`http://localhost:3001/uploads/${data.companylogo}`} alt="" className="h-32 w-32" />
+                            <img src={`https://crm-based-job-portal-management-system.onrender.com/uploads/${data.companylogo}`} alt="" className="h-32 w-32" />
                             <div>
                                 <p className="font-bold text-3xl">{data.companyname}</p>
                                 <p className="font-semibold text-gray-600 ">{data.location}</p>

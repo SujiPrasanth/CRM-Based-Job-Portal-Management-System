@@ -42,7 +42,7 @@ function Jobs() {
     useEffect(() => {
 
         async function fetchdata() {
-            const res = await fetch('http://localhost:3001/api/fetchcompanydata', {
+            const res = await fetch('https://crm-based-job-portal-management-system.onrender.com/api/fetchcompanydata', {
                 credentials: "include"
             })
             const data = await res.json()
@@ -72,7 +72,7 @@ function Jobs() {
     const handleapply = async (jobid) => {
         try {
 
-            const res = await fetch(`http://localhost:3001/api/applyjob`, {
+            const res = await fetch(`https://crm-based-job-portal-management-system.onrender.com/api/applyjob`, {
                 method: "POST",
                 credentials: "include",
                 headers: { "Content-Type": "application/json" },
@@ -96,7 +96,7 @@ function Jobs() {
     const handlesave = async (jobid) => {
         try {
 
-            const res = await fetch(`http://localhost:3001/api/savejob`, {
+            const res = await fetch(`https://crm-based-job-portal-management-system.onrender.com/api/savejob`, {
                 method: "POST",
                 credentials: "include",
                 headers: { "Content-Type": "application/json" },
@@ -155,7 +155,7 @@ function Jobs() {
 
                                 <div className="flex gap-3 items-center">
                                     <div>
-                                        <img src={`http://localhost:3001/uploads/${item.companylogo}`} alt="" className="h-7 w-7" />
+                                        <img src={`https://crm-based-job-portal-management-system.onrender.com/uploads/${item.companylogo}`} alt="" className="h-7 w-7" />
                                     </div>
                                     <div className="flex flex-col">
                                         <p className="text-xl font-bold">{item.companyname}</p>
