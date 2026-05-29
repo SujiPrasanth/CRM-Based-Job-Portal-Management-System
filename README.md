@@ -50,13 +50,17 @@ https://github.com/user-attachments/assets/37d53d3f-15b3-4b6d-90b0-ea3339affb04
 
 Experience the Live Application
 
-**Frontend (Vercel):**  
+**Frontend (Vercel):**
 https://crm-based-job-portal-management-sys.vercel.app/
 
-**Backend (Render API):**  
+> Note: For the best experience, please use Microsoft Edge or enable third-party cookies in Chrome, as Chrome may block cross-site authentication cookies in deployed applications.
+
+**Backend (Render API):**
 https://crm-based-job-portal-management-system.onrender.com
 
 > Note: Backend may take a few seconds to respond initially because it is hosted on Render free tier.
+
+
 
 ---
 
