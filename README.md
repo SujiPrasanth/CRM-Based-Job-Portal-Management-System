@@ -170,4 +170,6 @@ npm run dev
 
 ## Author
 
-Suji Prasanth
+**Suji Prasanth**
+
+Full Stack Developer | MERN Stack Enthusiast
